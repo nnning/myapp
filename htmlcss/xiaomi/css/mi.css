@@ -1,0 +1,69 @@
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+    list-style: none;
+}
+
+.header a {
+    color: #b0b0b0;
+}
+
+.header a:hover {
+    color: #fff;
+}
+
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+    
+}
+
+span {
+    margin: 0 3.6px;
+    color: #424242;
+}
+
+.header-left {
+    float: left;
+    list-style: none;
+}
+
+.header-right {
+    float: right;
+    list-style: none;
+}
+
+.header li {
+    float: left;
+}
+
+.cart {
+    margin-left: 25px;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.cart i{
+    margin-right: 4px;
+}
+
+.cart:hover{
+    background-color: #fff;
+    
+}
+
+.cart:hover a{
+    
+    color: #ff4700
+} 
