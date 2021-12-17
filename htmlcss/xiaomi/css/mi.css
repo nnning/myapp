@@ -70,7 +70,7 @@ span {
 
 .cart:hover a{
     
-    color: #ff4700
+    color: #ff6700
 } 
 
 .cart-menu {
@@ -93,6 +93,7 @@ span {
 /* nav css  */
 
 .nav {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -114,19 +115,43 @@ span {
 }
 
 .search>input{
+    float: left;
     width: 245px;
     height: 50px;
     border: 1px solid #e0e0e0;
     padding: 0 10px;
     box-sizing: border-box;
-    float: left;
+    border-right: none;
+    outline: none;
+    transition: all .3s
 }
 .search>a {
     width: 50px;
     height: 50px;
     float: left;
     border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #616161;
+    line-height: 48px;
+    transition: all .3s;
 }
+
+.search>a:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+.search>input:hover, .search>input:hover+a{
+    border-color: #b0b0b0;
+}
+
+/* click on textfiled changing border color to orange. */
+.search>input:focus, .search>input:focus+a{
+    border-color: #ff6700;
+}
+
 .nav-bar {
     width: 868px;
     height: 100px;
@@ -136,9 +161,10 @@ span {
 }
 
 .nav-bar>ul>li{
+    height: 100px;
     float: left;
-    padding: 38px 10px
-    
+    padding: 38px 10px;
+    box-sizing: border-box;
 }
 .nav-bar>ul>li>a:hover{
     color: #ff4700;
@@ -147,4 +173,28 @@ span {
 .logo img{
     width: 56px;
     height: 56px;
+}
+
+.nav-bar-list{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 229px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 3px 4px rgba(0,0,0, .18);
+    opacity: 1;
+}
+
+.nav-bar li:hover>.nav-bar-list {
+    opacity: 1;
+}
+
+.nav-bar-list li{
+    float: left;
+    width: 204px;
+   
+    background-color: red;
+    padding-top: 35px;
 }
