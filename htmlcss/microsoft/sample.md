@@ -35,7 +35,10 @@ _This text_ is italic
 1. item3
 
 <!-- image -->
-![logo](logo.png)
+![logo](.\logo.png)
+
+
+<img src=".\logo.png" alt="logo" width="80"/>
 
 <!-- blockquote -->
 > public static void main {     
